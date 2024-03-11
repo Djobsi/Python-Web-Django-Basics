@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href={% static 'css/site.css' %}>
+</head>
+<body>
+    <h1>{{ title }}</h1>
+    <img src={% static 'imgs/cat.jpg' %}>
+    <h1 style="margin-left: 2%">Dict:</h1>
+    <h2>{{ person_obj.first_name }}</h2>
+    <h2>{{ person_obj.full_name }}</h2>
+    <hr>
+    <h1>Filters</h1>
+    <h2>{{ person_obj.full_name|truncatewords:1 }}</h2>
+    <h2>{{ names|join:', ' }}</h2>
+    <h1>Tags</h1>
+    <ul>
+        {% for age in ages %}
+            <li>{{ age }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
