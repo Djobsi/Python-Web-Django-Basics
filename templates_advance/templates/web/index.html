@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load number_filters %}
+
+{% load list_tags %}
+
+{% block page_title %} - Home {% endblock %}
+
+{% block body_end_script %}
+    <script>
+        setTimeout(() => {
+            document.body.innerHTML += '<h2>After 2 seconds</h2>'
+        }, 2000);
+    </script>
+{% endblock %}
+
+{% block main_content %}
+    <h2>This is {{ cat_names|capfirst }}:</h2>
+
+    <img style="width: 600px; border-radius: 10px" src="{{ cat_image }}" alt="">
+
+    <h2>Numbers:</h2>
+    <p> Normal nums: {% list_of numbers %} </p>
+    <p> Odd nums: {{ numbers|odd }} </p>
+    <p> Even nums: {{ numbers|even }} </p>
+
+    <h1>{% current_time %}</h1>
+{% endblock %}

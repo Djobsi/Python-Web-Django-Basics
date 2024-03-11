@@ -1,0 +1,39 @@
+{% load static %}
+{% load user_tags  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aleks's App{% block page_title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+    {% block styles %}
+    {% endblock %}
+
+    {% block head_scripts %}
+    {% endblock %}
+
+</head>
+<body>
+
+{% block body_start_script %}
+{% endblock %}
+
+    {% include 'partials/navbar.html' %}
+
+<strong>User: </strong>{% show_user %}
+    <h1>Welcome to Aleks app!</h1>
+
+<p>This is an application about cats!</p>
+
+    {% include 'partials/footer.html' %}
+
+    {% block main_content %}
+        <h2>No content!</h2>
+    {% endblock %}
+
+
+{% block body_end_script %}
+{% endblock %}
+
+</body>
+</html>
