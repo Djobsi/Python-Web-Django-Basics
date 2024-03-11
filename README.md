@@ -10,4 +10,5 @@ The training includes practical exercises (labs) and workshops for building comp
 <li>Working with Forms and Model Forms</li>
 <li>Forms Validation</li>
 <h1>Certificate and Course Cirriculum</h1>
-![Django Basics - January 2024 - Certificate](https://github.com/Djobsi/Python-Web-Django-Basics/assets/122883325/3f1fb9e9-9df2-4f19-8483-0656f389a9c2)
+
+![Django Basics - January 2024 - Certificate](https://github.com/Djobsi/Python-Web-Django-Basics/assets/122883325/0f605c3c-5036-4cdd-908c-526ea97f20f1)
