@@ -1,0 +1,17 @@
+<header>
+    <h1>
+        <a class="index-navigation" href="{% url "home" %}"
+        ><span>World of Speed</span></a
+        >
+    </h1>
+    <nav>
+
+        {% if not profile %}
+            <a href="{% url "create-profile" %}">Create Profile</a>
+        {% else %}
+            <a href="{% url "catalogue-details" %}">Catalogue</a>
+            <a href="{% url "create-car" %}">Create Car</a>
+            <a href="{% url "detail-profile" %}">Profile</a>
+        {% endif %}
+    </nav>
+</header>
